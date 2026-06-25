@@ -1,0 +1,390 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "obsidian-enhancing-mindmap",
+        "version": "1.0.0",
+        "title": "Enhancing Mindmap-zh-cn",
+        "description": "Enhancing Mindmap Localization & Tweaks",
+        "language": "zh-cn",
+        "supportedVersions": "0.2.5",
+        "author": "Zergo"
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "clockwise",
+                    "target": "顺时针"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "left",
+                    "target": "左"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "right",
+                    "target": "右"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "mind map",
+                    "target": "思维导图"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "img",
+                    "target": "img"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Error: kanban locale not found",
+                    "target": "错误：未找到看板语言包"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Error creating mindmap board:",
+                    "target": "创建思维导图面板时出错："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "stroke array is error",
+                    "target": "描边数组错误"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Example: black|white|#ccc",
+                    "target": "示例：black|white|#ccc"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Example: 16",
+                    "target": "示例：16"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Example: red,orange,blue ...",
+                    "target": "示例：red,orange,blue ..."
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Use of TBox is deprecated and mapped to RBox. Use .rbox() instead.",
+                    "target": "TBox 已弃用，已映射到 RBox。请改用 .rbox()。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Parse xmind error",
+                    "target": "解析 xmind 文件出错"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "id",
+                    "source": "Create New MindMap",
+                    "target": "创建新思维导图"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "id",
+                    "source": "Toggle to markdown or mindmap",
+                    "target": "切换至 Markdown 或思维导图"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "id",
+                    "source": "Copy Node",
+                    "target": "复制节点"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "id",
+                    "source": "Paste Node",
+                    "target": "粘贴节点"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "id",
+                    "source": "Export to html",
+                    "target": "导出为 HTML"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "latin",
+                    "target": "latin"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "cyrillic",
+                    "target": "cyrillic"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "armenian",
+                    "target": "亚美尼亚文"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "brahmic",
+                    "target": "婆罗米系文字"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "georgian",
+                    "target": "格鲁吉亚文"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "cjk",
+                    "target": "中日韩文字"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "hangul",
+                    "target": "韩文"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "Notice('Parse xmind error')",
+                    "target": "Notice('Parse xmind error')"
+                },
+                {
+                    "source": "Notice(`${n} %`)",
+                    "target": "Notice(`${n} %`)"
+                },
+                {
+                    "source": "Notice(`${t(\"Save success\")}`)",
+                    "target": "Notice(`${t(\"Save success\")}`)"
+                },
+                {
+                    "source": "Notice(`${t(\"Save fail\")}`)",
+                    "target": "Notice(`${t(\"Save fail\")}`)"
+                },
+                {
+                    "source": "setTitle(`${t(\"Open as markdown\")}`)",
+                    "target": "setTitle(`${t(\"Open as markdown\")}`)"
+                },
+                {
+                    "source": "setTitle(`${t(\"Export to opml\")}`)",
+                    "target": "setTitle(`${t(\"Export to opml\")}`)"
+                },
+                {
+                    "source": "setName(`${t('Canvas size')}`)",
+                    "target": "setName(`${t('Canvas size')}`)"
+                },
+                {
+                    "source": "setDesc(`${t('Canvas size desc')}`)",
+                    "target": "setDesc(`${t('Canvas size desc')}`)"
+                },
+                {
+                    "source": "setName(`${t('Canvas background')}`)",
+                    "target": "setName(`${t('Canvas background')}`)"
+                },
+                {
+                    "source": "setDesc(`${t('Canvas background desc')}`)",
+                    "target": "setDesc(`${t('Canvas background desc')}`)"
+                },
+                {
+                    "source": "setPlaceholder('Example: black|white|#ccc')",
+                    "target": "setPlaceholder('Example: black|white|#ccc')"
+                },
+                {
+                    "source": "setName(`${t('Max level of node to markdown head')}`)",
+                    "target": "setName(`${t('Max level of node to markdown head')}`)"
+                },
+                {
+                    "source": "setDesc(`${t('Max level of node to markdown head desc')}`)",
+                    "target": "setDesc(`${t('Max level of node to markdown head desc')}`)"
+                },
+                {
+                    "source": "setName(`${t('Font size')}`)",
+                    "target": "setName(`${t('Font size')}`)"
+                },
+                {
+                    "source": "setDesc(`${t('Font size desc')}`)",
+                    "target": "setDesc(`${t('Font size desc')}`)"
+                },
+                {
+                    "source": "setPlaceholder('Example: 16')",
+                    "target": "setPlaceholder('Example: 16')"
+                },
+                {
+                    "source": "setName(`${t('Mind map layout direct')}`)",
+                    "target": "setName(`${t('Mind map layout direct')}`)"
+                },
+                {
+                    "source": "setDesc(`${t('Mind map layout direct desc')}`)",
+                    "target": "setDesc(`${t('Mind map layout direct desc')}`)"
+                },
+                {
+                    "source": "setName(`${t('Stroke Array')}`)",
+                    "target": "setName(`${t('Stroke Array')}`)"
+                },
+                {
+                    "source": "setDesc(`${t('Stroke Array Desc')}`)",
+                    "target": "setDesc(`${t('Stroke Array Desc')}`)"
+                },
+                {
+                    "source": "setPlaceholder('Example: red,orange,blue ...')",
+                    "target": "setPlaceholder('Example: red,orange,blue ...')"
+                },
+                {
+                    "source": "setTitle(`${t('New mindmap board')}`)",
+                    "target": "setTitle(`${t('New mindmap board')}`)"
+                },
+                {
+                    "source": "setTitle(`${t('Open as mindmap board')}`)",
+                    "target": "setTitle(`${t('Open as mindmap board')}`)"
+                },
+                {
+                    "source": "name = \"SuppressedError\"",
+                    "target": "name = \"SuppressedError\""
+                },
+                {
+                    "source": "text = \"Sub title\"",
+                    "target": "text = \"Sub title\""
+                },
+                {
+                    "source": "innerText = \"\"",
+                    "target": "innerText = \"\""
+                },
+                {
+                    "source": "innerText = ''",
+                    "target": "innerText = ''"
+                },
+                {
+                    "source": "link = 'http://www.w3.org/1999/xlink'",
+                    "target": "link = 'http://www.w3.org/1999/xlink'"
+                },
+                {
+                    "source": "text = ''",
+                    "target": "text = ''"
+                },
+                {
+                    "source": "text: ''",
+                    "target": "text: ''"
+                },
+                {
+                    "source": "name = \"ParseError\"",
+                    "target": "name = \"ParseError\""
+                },
+                {
+                    "source": "name: 'latin'",
+                    "target": "name: 'latin'"
+                },
+                {
+                    "source": "name: 'cyrillic'",
+                    "target": "name: 'cyrillic'"
+                },
+                {
+                    "source": "name: 'armenian'",
+                    "target": "name: 'armenian'"
+                },
+                {
+                    "source": "name: 'brahmic'",
+                    "target": "name: 'brahmic'"
+                },
+                {
+                    "source": "name: 'georgian'",
+                    "target": "name: 'georgian'"
+                },
+                {
+                    "source": "name: \"cjk\"",
+                    "target": "name: \"cjk\""
+                },
+                {
+                    "source": "name: 'hangul'",
+                    "target": "name: 'hangul'"
+                },
+                {
+                    "source": "text = \"text\"",
+                    "target": "text = \"text\""
+                },
+                {
+                    "source": "text: \"\\\\Vert\"",
+                    "target": "text: \"\\\\Vert\""
+                },
+                {
+                    "source": "text: \" \"",
+                    "target": "text: \" \""
+                },
+                {
+                    "source": "name = \"\\\\\" + stash;\n      base.classes.unshift(\"",
+                    "target": "name = \"\\\\\" + stash;\n      base.classes.unshift(\""
+                },
+                {
+                    "source": "text: \"\\\\prime\"",
+                    "target": "text: \"\\\\prime\""
+                },
+                {
+                    "source": "name : \"\"",
+                    "target": "name : \"\""
+                },
+                {
+                    "source": "text = \"0pt\"",
+                    "target": "text = \"0pt\""
+                },
+                {
+                    "source": "text: \"---\"",
+                    "target": "text: \"---\""
+                },
+                {
+                    "source": "text: \"--\"",
+                    "target": "text: \"--\""
+                },
+                {
+                    "source": "textContent = \"\"",
+                    "target": "textContent = \"\""
+                },
+                {
+                    "source": "name = 'prism'",
+                    "target": "name = 'prism'"
+                },
+                {
+                    "source": "text = `[${token.children[1].content}](${token.children[0].href})`",
+                    "target": "text = `[${token.children[1].content}](${token.children[0].href})`"
+                },
+                {
+                    "source": "name: `${t('Create new mindmap')}`",
+                    "target": "name: `${t('Create new mindmap')}`"
+                },
+                {
+                    "source": "name: `${t('Toggle markdown/mindmap')}`",
+                    "target": "name: `${t('Toggle markdown/mindmap')}`"
+                },
+                {
+                    "source": "name: `${t('Copy node')}`",
+                    "target": "name: `${t('Copy node')}`"
+                },
+                {
+                    "source": "name: `${t('Paste node')}`",
+                    "target": "name: `${t('Paste node')}`"
+                },
+                {
+                    "source": "name: `${t('Export to html')}`",
+                    "target": "name: `${t('Export to html')}`"
+                }
+            ]
+        }
+    }
+}
